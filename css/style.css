@@ -1,29 +1,336 @@
 
-
 body {
+  margin: 0;
+  padding: 0;
+
   font-size: 14px;
-  line-height: 24px;
-  color: #000000;
-  font-weight: normal;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  background-image: url("img/mainbg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.inner-page {
+  background-color: #f8f5f2;
+  background-image: url("img/background-pattern-light.jpg");
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  font: inherit;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #000000;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.main-navigation a:hover,
+.main-navigation a:active,
+.main-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:active,
+.user-navigation a:focus {
+  background-color: #242424;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+li.breadcrumbs-current {
+ color: #aba9a7;
 }
 
 .page-title {
   font-size: 30px;
   line-height: 42px;
-  color: #000000;
-}  
+}
 
-.features-list-item h3 {
-  font-size: 30px;
+.product-photo-full {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-photo-preview li {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-article {
+  text-align: right;
+  color: #aeaeae;
+}
+
+.product-info h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.price-list-header {
+  font-size: 42px;
   line-height: 42px;
+}
+
+.brands-and-price h2,
+.about-us h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.price-list {
+  border-collapse: collapse;
+}
+
+.price-list td {
+  border: 1px solid #000000;
+  text-align: left;
+}
+
+.filter ul {
+  line-height: 18px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.catalog-list-item {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-list-item:hover {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-list-item h3 {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.catalog-category {
+  text-transform: none;
+}
+
+.product-price b {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  background-color: #e5e5e5;
+}
+
+.product-price .button {
+  line-height: 20px;
+}
+
+.features {
   color: #f7f4f1;
 }
 
+.features-list {
+  list-style: none;
+}
 
+.features-list-item {
+  text-align: center;
+}
 
+.features-list-item h3 {
+  font-size: 30px;
+  line-height: 42px; 
+}
 
+.index-columns {
+  background-color: #f8f5f2;
+  background-image: url("img/background-pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
 
+.news-galery-container h2 {
+  font-size: 30px;
+  line-height: 42px; 
+}
 
+.gallery-photo {
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
 
-   
+.news-list-item time {
+  text-transform: lowercase;
+}
+
+.appointment-form-item input {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.appointment-form-item input:focus {
+  border-color: #663d15;
+}
+
+.pagination-page a {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.pagination-page a:hover,
+.pagination-page a:focus,
+.pagination-page a:active {
+  background-color: #663d15;
+}
+
+.panination-page-current a {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.panination-page-current a:hover,
+.panination-page-current a:focus,
+.panination-page-current a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: #222222;
+  background-image: url("img/background-pattern-dark.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-contacts a {
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.social-btn a:hover,
+.social-btn a:focus,
+.social-btn a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus,
+.footer-copyright a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal-login {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("img/background-pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login-form input:hover {
+  border-color: #663d15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.restore-password {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.restore-password:hover,
+.restore-password:focus {
+  text-decoration: none;
+}

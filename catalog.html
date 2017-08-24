@@ -3,25 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Средства для ухода - Барбершоп "Бородинский"</title>
-	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="header-logo" href="index.html"><img src="http://placehold.it/111x24" width="111" height="24" alt="Барбершоп Бородинский"></a>
+        <a class="header-logo" href="index.html"><img src="img/logo.svg" width="111" height="24" alt="Барбершоп Бородинский"></a>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
-          <li><a href="#">Прайс-лист</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
           <li class="site-navigation-current"><a>Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
+        <ul class="user-navigation">
+          <li class="login-link">
+            <a class="login-link" href="login.html">Вход</a>
+          </li>
+        </ul>
       </nav>
-      <ul class="user-navigation">
-        <li class="login-link">
-          <a class="login-link" href="login.html">Вход</a>
-        </li>
-      </ul>
     </header>
     <main class="container">
       <h1 class="page-title">Средства для ухода</h1>
@@ -37,28 +39,28 @@
             <legend>Производители:</legend>
             <ul>
               <li class="filter-option">
-                <input id="filter-baxter-of-california" class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" checked>
-                <label for="filter-baxter-of-california">Baxter of California</label>
+                <input id="filter-baxter-of-california" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="baxter-of-california" checked>
+                <label class="filter-checkbox-label" for="filter-baxter-of-california">Baxter of California</label>
               </li>
               <li class="filter-option">
-                <input id="filter-mr-natty" class="visually-hidden filter-input-checkbox" type="checkbox" name="mr-natty">
-                <label for="filter-mr-natty">Mr Natty</label>
+                <input id="filter-mr-natty" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mr-natty">
+                <label class="filter-checkbox-label" for="filter-mr-natty">Mr Natty</label>
               </li>
               <li class="filter-option">
-                <input id="filter-suavetico" class="visually-hidden filter-input-checkbox" type="checkbox" name="suavetico" checked>
-                <label for="filter-suavetico">Suavetico</label>
+                <input id="filter-suavetico" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="suavetico" checked>
+                <label class="filter-checkbox-label" for="filter-suavetico">Suavetico</label>
               </li>
               <li class="filter-option">
-                <input id="filter-malin-goetz" class="visually-hidden filter-input-checkbox" type="checkbox" name="malin-goetz">
-                <label for="filter-malin-goetz">Malin+Goetz</label>
+                <input id="filter-malin-goetz" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="malin-goetz">
+                <label class="filter-checkbox-label" for="filter-malin-goetz">Malin+Goetz</label>
               </li>
               <li class="filter-option">
-                <input id="filter-myrrays" class="visually-hidden filter-input-checkbox" type="checkbox" name="myrrays">
-                <label for="filter-myrrays">Myrray's</label>
+                <input id="filter-myrrays" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="myrrays">
+                <label class="filter-checkbox-label" for="filter-myrrays">Myrray's</label>
               </li>
               <li class="filter-option">
-                <input id="filter-american-crew" class="visually-hidden filter-input-checkbox" type="checkbox" name="american-crew" checked>
-                <label for="filter-american-crew">American Crew</label>
+                <input id="filter-american-crew" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" checked>
+                <label class="filter-checkbox-label" for="filter-american-crew">American Crew</label>
               </li>
             </ul>
           </fieldset>
@@ -66,16 +68,16 @@
             <legend>Группы товаров:</legend>
             <ul>
               <li class="filter-option">
-                <input id="filter-shaving" class="visually-hidden filter-input-radio" type="radio" name="product-group" value="shaving">
-                <label for="filter-shaving">Бритвенные принадлежности</label>
+                <input id="filter-shaving" class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving">
+                <label class="filter-radio-label" for="filter-shaving">Бритвенные принадлежности</label>
               </li>
               <li class="filter-option">
-                <input id="filter-care" class="visually-hidden filter-input-radio" type="radio" name="product-group" value="skin-care" checked>
-                <label for="filter-care">Средства для ухода</label>
+                <input id="filter-care" class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="skin-care" checked>
+                <label class="filter-radio-label" for="filter-care">Средства для ухода</label>
               </li>
               <li class="filter-option">
-                <input id="filter-accessories" class="visually-hidden filter-input-radio" type="radio" name="product-group" value="accessories">
-                <label for="filter-accessories">Аксессуары</label>
+                <input id="filter-accessories" class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories">
+                <label class="filter-radio-label" for="filter-accessories">Аксессуары</label>
               </li>
             </ul>
           </fieldset>
