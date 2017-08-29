@@ -10,6 +10,8 @@
   <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
+        <div class="main-navigation-wrapper">
+          <div class="container">
         <a class="header-logo" href="index.html"><img src="img/logo.svg" width="111" height="24" alt="Барбершоп Бородинский"></a>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
@@ -23,6 +25,8 @@
             <a class="login-link" href="login.html">Вход</a>
           </li>
         </ul>
+        </div>
+        </div>
       </nav>
     </header>
     <main class="container">
@@ -32,6 +36,7 @@
         <li><a href="#">Магазин</a></li>
         <li class="breadcrumbs-current">Средства для ухода</li>
       </ul>
+      <div class="inner-columns">
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" action="#" method="get">
@@ -185,8 +190,10 @@
           <li class="pagination-page" title="Страница 4"><a href="#">4</a></li>
         </ul>
       </section>
+    </div>
     </main>
     <footer class="main-footer">
+      <div class="container">
       <p class="footer-contacts">
         Барбершоп "Бородинский"<br>
         Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -205,6 +212,7 @@
         <b>Разработано:</b>
         <a class="button" href="https://htmlacademy.ru/">HTML Academy</a>
       </p>
+    </div>
       <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите, пожалуйста, свой логин и пароль</p>
@@ -218,7 +226,7 @@
             <input id="user-password" class="login-form-password" type="password" name="password" placeholder="Пароль">
           </p>
           <p class="login-password-info">
-            <label clsass="login-checkbox">
+            <label class="login-checkbox">
               <input class="visually-hidden" type="checkbox" name="remember">
               <span class="checkbox-indicator"></span>
               Запомните меня
